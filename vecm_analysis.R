@@ -30,13 +30,6 @@ stats_result <- t(sapply(vars, get_desc_stats))
 stats_result <- round(stats_result, 3)
 print(stats_result)
 
-stats_result <- t(sapply(vars, get_desc_stats))
-
-
-stats_result <- round(stats_result, 3)
-
-
-print(stats_result)
 library(ggplot2)
 p <- ggplot(data, aes(x = Year)) +
   geom_line(aes(y = lnGDP, color = "Log GDP"), linewidth = 1.2) +
